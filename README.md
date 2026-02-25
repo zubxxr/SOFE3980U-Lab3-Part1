@@ -276,10 +276,19 @@ In this section, the MySQL image will be deployed over the GKE cluster using YAM
 
      ![create a new repo](figures/d3_v2.jpg)
      
-   * Name it **sofe3980u** and ensure that the type is set to **Docker**. Set the region to "northamerica-northeast2 (Toronto)". Finally, press **create**.
+   * Name it **sofe3980u** and ensure that the type is set to **Docker**. Set the region to "us-central1 (Iowa)". Finally, press **create**.
 
      ![create a new repo (2)](figures/d4.jpg)
-     
+
+    > **Important (Updated Feb 25, 2026):**  
+    > Earlier versions of this lab used the region `northamerica-northeast2 (Toronto)` when setting up GKE and Artifact Registry.  
+    > The GKE setup instructions have already been updated to use **us-central1 (Iowa)**.  
+    > I personally experienced provisioning and quota-related issues in the Toronto region, so to avoid possible setup problems, please ensure that you use **us-central1 (Iowa)** for both:
+    > - GKE cluster region  
+    > - Artifact Registry repository region
+    > 
+    > The screenshot above may still display `northamerica-northeast2 (Toronto)`, but you should select **us-central1 (Iowa)** instead.
+
    * open the **sofe3980u** repository and  copy the repository path.
 
      ![create a new repo (2)](figures/d5.jpg)
